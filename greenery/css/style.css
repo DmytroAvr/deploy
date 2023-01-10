@@ -687,6 +687,10 @@ svg {
   text-align: center;
 }
 
+.product-item__link {
+  margin-bottom: 0.125rem;
+}
+
 .product-item__name {
   margin-bottom: 0.125rem;
 }
