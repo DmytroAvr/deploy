@@ -1575,6 +1575,10 @@ textarea.input {
   max-width: 9.4375rem;
   margin: 0 auto 1.875rem 0;
 }
+/*.highlight__artist .card-common {max-width: 9.4375rem;}*/
+.highlight__artist .card-common {
+	max-width: 9.4375rem;
+}
 
 .highlight__artist .card-common__info {
   padding: 0.625rem 1.25rem;
