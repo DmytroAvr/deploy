@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230122212908">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230130124005">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,18 +16,18 @@
 	<div class="wrapper">
 		<header class="header">
 			<div class="header__body">
-				<a href="#" class="header__logo"><img src="img/logo.svg" alt="logo"></a>
+				<a href="home.html" class="header__logo "><img src="img/logo.svg" alt="logo" class="injectable"></a>
 				<div class="header__menu menu">
 					<div class="menu__body-icon"><button type="button" class="menu__icon icon-menu"><span></span></button></div>
 					<nav class="menu__body">
 						<ul class="menu__list">
-							<li class="menu__item"><a href="#" class="menu__link">Marketplace</a></li>
-							<li class="menu__item"><a href="" class="menu__link">Rankings</a></li>
-							<li class="menu__item"><a href="" class="menu__link">Connect a&nbsp;wallet</a></li>
+							<li class="menu__item "><a href="marketplace.html" class="menu__link undefined(link==1){_active}">Marketplace</a></li>
+							<li class="menu__item"><a href="rankings.html" class="menu__link undefined(link==2){_active}">Rankings</a></li>
+							<li class="menu__item"><a href="connect.html" class="menu__link undefined(link==3){_active}">Connect a&nbsp;wallet</a></li>
 						</ul>
 					</nav>
 				</div>
-				<a class="header__action button button--fill" href="#" data-da=".menu__body,930">
+				<a class="header__action button button--fill undefined(link==4){_active}" href="sign-up.html" data-da=".menu__body,990">
 					<img src="img/icons/User.svg" alt="icon">Sign Up
 				</a>
 			</div>
@@ -38,25 +38,26 @@
 					<div class="hero__block-text hero-about-block">
 						<h1 class="hero-about-block__title title">Discover digital art & Collect NFTs</h1>
 						<p class="hero-about-block__sub-title sub-title">NFT marketplace UI created with Anima for Figma. Collect, buy and sell art from more than 20k NFT artists.</p>
-						<div class="hero-about-block__mobile-promo-card"></div>
+						<div class="hero-about-block__place-adapt" hidden></div>
 						<a class="hero-about-block__start button button--fill" href="#">
-							<img src="img/icons/rocketLaunch.svg" alt="go">Get Started</a>
-						<div class="hero-about-block__about-info">
-							<div class="hero-about-block__info-column">
-								<p class="hero-about-block__counter"><span>240</span>k+</p>
-								<p class="hero-about-block__about-counter">Total Sale</p>
+							<img src="img/icons/RocketLaunch.svg" alt="go" class="injectable">Get Started</a>
+						<div class="hero-about-block__stats stats" data-watch data-watch-once>
+							<div class="stats__info-column">
+								<p class="stats__counter"><span data-digits-counter data-digits-counter-speed="2500">240</span>k+</p>
+								<p class="stats__about-counter">Total Sale</p>
 							</div>
-							<div class="hero-about-block__info-column">
-								<p class="hero-about-block__counter"><span>100</span>k+</p>
-								<p class="hero-about-block__about-counter">Auctions</p>
+							<div class="stats__info-column">
+								<p class="stats__counter"><span data-digits-counter data-digits-counter-speed="2500">100</span>k+</p>
+								<p class="stats__about-counter">Auctions</p>
 							</div>
-							<div class="hero-about-block__info-column">
-								<p class="hero-about-block__counter"><span>240</span>k+</p>
-								<p class="hero-about-block__about-counter">Artists</p>
+							<div class="stats__info-column">
+								<p class="stats__counter"><span data-digits-counter data-digits-counter-speed="2500">240</span>k+</p>
+								<p class="stats__about-counter">Artists</p>
 							</div>
+
 						</div>
 					</div>
-					<div class="hero__image-block promo-card" data-da=".hero-about-block__mobile-promo-card, 735">
+					<div class="hero__image-block promo-card" data-da=".hero-about-block__place-adapt, 735">
 						<div class="promo-card__img">
 							<a href="#" class="promo-card__image-ibg"><picture><source data-srcset="img/database/animakid/hero.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/database/animakid/hero.png" alt="promo"></picture></a>
 						</div>
@@ -165,7 +166,7 @@
 							<h3 class="section-title__title title">Top creators</h3>
 							<p class="section-title__sub-title sub-title">Checkout Top Rated Creators on the NFT</p>
 						</div>
-						<a class="top-creators__link button button--border-action" href="#" data-da=".top-creators__place-adapt"><img src="img/icons/rocketLaunch.svg" alt="go"> View Rankings</a>
+						<a class="top-creators__link button button--border-action" href="#" data-da=".top-creators__place-adapt "><img src="img/icons/RocketLaunch.svg" alt="go" class="injectable"> View Rankings</a>
 					</div>
 					<div class="top-creators__cards">
 						<!-- card creators -->
@@ -419,13 +420,13 @@
 							<h3 class="section-title__title title">Discover More NFTs</h3>
 							<p class="section-title__sub-title sub-title">Explore new trending NFTs</p>
 						</div>
-						<a class="discover__link button button--border-action" href="#" data-da=".discover__place-adapt"><img src="img/icons/Eye.svg" alt="icon">See All</a>
+						<a class="discover__link button button--border-action" href="#" data-da=".discover__place-adapt"><img src="img/icons/Eye.svg" alt="icon" class="injectable">See All</a>
 					</div>
 					<div class="discover__cards">
 						<!-- card -->
 						<div class="discover__card card-common">
 							<div class="card-common__img">
-								<a href="#" class="card-common__image-ibg"><picture><source data-srcset="img/database/animakid/hero.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/database/animakid/hero.png" alt="promo"></picture></a>
+								<a href="lot.html" class="card-common__image-ibg"><picture><source data-srcset="img/database/animakid/hero.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/database/animakid/hero.png" alt="promo"></picture></a>
 							</div>
 							<div class="card-common__info">
 								<h5 class="card-common__name-promo-img">Distant Galaxy</h5>
@@ -451,7 +452,7 @@
 						<!-- card -->
 						<div class="discover__card card-common">
 							<div class="card-common__img">
-								<a href="#" class="card-common__image-ibg"><picture><source data-srcset="img/database/nebulaKid/dicover.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/database/nebulaKid/dicover.png" alt="promo"></picture></a>
+								<a href="lot.html" class="card-common__image-ibg"><picture><source data-srcset="img/database/nebulaKid/dicover.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/database/nebulaKid/dicover.png" alt="promo"></picture></a>
 							</div>
 							<div class="card-common__info">
 								<h5 class="card-common__name-promo-img">Life On Edena</h5>
@@ -477,7 +478,7 @@
 						<!-- card -->
 						<div class="discover__card card-common">
 							<div class="card-common__img">
-								<a href="#" class="card-common__image-ibg"><picture><source data-srcset="img/database/keepitreal/author-Keepitreal--full-size.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/database/keepitreal/author-Keepitreal--full-size.png" alt="promo"></picture></a>
+								<a href="lot.html" class="card-common__image-ibg"><picture><source data-srcset="img/database/keepitreal/author-Keepitreal--full-size.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/database/keepitreal/author-Keepitreal--full-size.png" alt="promo"></picture></a>
 							</div>
 							<div class="card-common__info">
 								<h5 class="card-common__name-promo-img">AstroFiction</h5>
@@ -527,24 +528,25 @@
 								<div class="highlight__title-section section-title">
 									<h3 class="section-title__title title">Magic Mashrooms</h3>
 								</div>
-								<a class="highlight__link button button--border-white" href="#" data-da=".highlight__place-adapt, 749.98"><img src="img/icons/Eye.svg" alt="icon">See NFT</a>
+								<a class="highlight__link button button--white-fill " href="lot.html" data-da=".highlight__place-adapt, 749.98"><img src="img/icons/Eye.svg" alt="icon" class="injectable">See NFT</a>
 							</div>
 							<div class="highlight__timer timer-end">
 								<div class="timer-end__body">
+									<p class="timer-end__date-end" hidden id="toEndEndDate">Jan 1, 2023 20:37:25</p>
 									<p class="timer-end__name">Auction ends in:</p>
 									<div class="timer-end__time-row">
 										<div class="timer-end__column-value">
-											<p class="timer-end__value-column"><span>59</span></p>
+											<p class="timer-end__value-column timer-end__value-column--hours" id="toEndHours">00</p>
 											<p class="timer-end__name-column">Hours</p>
 										</div>
 										<p class="timer-end__column-separator">:</p>
 										<div class="timer-end__column-value">
-											<p class="timer-end__value-column"><span>59</span></p>
+											<p class="timer-end__value-column timer-end__value-column--minutes" id="toEndMinutes">00</p>
 											<p class="timer-end__name-column">Minutes</p>
 										</div>
 										<p class="timer-end__column-separator">:</p>
 										<div class="timer-end__column-value">
-											<p class="timer-end__value-column"><span>59</span></p>
+											<p class="timer-end__value-column timer-end__value-column--seconds" id="toEndSecond">00</p>
 											<p class="timer-end__name-column">Seconds</p>
 										</div>
 									</div>
@@ -618,12 +620,13 @@
 								<h3 class="section-title__title title">Join our weekly digest</h3>
 								<p class="section-title__sub-title sub-title">Get exclusive promotions & updates straight to your inbox.</p>
 							</div>
-							<div class="subscribe__row-input input-row input-row--button-in">
-								<form action="files/sendmail/sendmail.php" method="POST">
+							<form action="files/sendmail/sendmail.php" method="POST">
+								<div class="subscribe__row-input input-row input-row--button-in">
+									<!--data-validate data-required="email"-->
 									<input type="text" name="form[email]" data-error="Enter correct email" placeholder="Enter your email here" class="input input--subscribe">
-									<button type="submit" class="button button--fill button--input-in"><img src="img/icons/mail.svg" alt="send"> Subscribe</button>
-								</form>
-							</div>
+									<button type="submit" class="button button--fill button--input-in"><img src="img/icons/Mail.svg" alt="send" class="injectable"> Subscribe</button>
+								</div>
+							</form>
 						</div>
 					</div>
 				</div>
@@ -637,10 +640,10 @@
 					<div class="footer__social social-footer">
 						<h5 class="social-footer__title">Join our community</h5>
 						<div class="social-footer__links">
-							<a class="social-footer__link social-footer__link--discord" href="#"><img class="social-footer__image-link" src="img/icons/social/DiscordLogo.svg" alt="#"></a>
-							<a class="social-footer__link social-footer__link--youtube" href="#"><img class="social-footer__image-link" src="img/icons/social/YoutubeLogo.svg" alt="#"></a>
-							<a class="social-footer__link social-footer__link--twitter" href="#"><img class="social-footer__image-link" src="img/icons/social/TwitterLogo.svg" alt="#"></a>
-							<a class="social-footer__link social-footer__link--instagramm" href="#"><img class="social-footer__image-link" src="img/icons/social/InstagramLogo.svg" alt="#"></a>
+							<a class="social-footer__link social-footer__link--discord" href="#" target="_blank"><img class="social-footer__image-link injectable" src="img/icons/social/DiscordLogo.svg" alt="Discord"><span hidden>link to social network Discord</span></a>
+							<a class="social-footer__link social-footer__link--youtube" href="#" target="_blank"><img class="social-footer__image-link injectable" src="img/icons/social/YoutubeLogo.svg" alt="Youtube"><span hidden>link to social network YouTube</span></a>
+							<a class="social-footer__link social-footer__link--twitter" href="#" target="_blank"><img class="social-footer__image-link injectable" src="img/icons/social/TwitterLogo.svg" alt="Twitter"><span hidden>link to social network Twitter</span></a>
+							<a class="social-footer__link social-footer__link--instagramm" href="#" target="_blank"><img class="social-footer__image-link injectable" src="img/icons/social/InstagramLogo.svg" alt="Instagram"><span hidden>link to social network Instagram</span></a>
 						</div>
 					</div>
 				</div>
@@ -658,12 +661,12 @@
 					<h5 class="footer__title">Join our weekly digest</h5>
 					<p class="footer__about">Get exclusive promotions & updates straight to your inbox.</p>
 					<div class="footer-subscribe">
-						<div class="footer-subscribe__row-input input-row input-row--button-in">
-							<form action="files/sendmail/sendmail.php" method="POST">
+						<form action="files/sendmail/sendmail.php" method="POST">
+							<div class="footer-subscribe__row-input input-row input-row--button-in">
 								<input type="text" name="form[email]" data-error="Enter correct email" placeholder="Enter your email here" class="input input--subscribe">
 								<button type="submit" class="button button--fill button--input-in">Subscribe</button>
-							</form>
-						</div>
+							</div>
+						</form>
 					</div>
 
 				</div>
@@ -675,7 +678,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230122212908"></script>
+	<script src="js/app.min.js?_v=20230130124005"></script>
 </body>
 
 </html>
