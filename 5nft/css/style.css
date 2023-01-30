@@ -2787,11 +2787,11 @@ textarea.input {
   }
 
   .footer-subscribe .input--subscribe {
-    padding-top: 1.1875rem;
+    padding-top: 1.0625rem;
   }
 
   .footer-subscribe .input--subscribe {
-    padding-bottom: 1.1875rem;
+    padding-bottom: 1.0625rem;
   }
 
   .card-common {
@@ -3057,11 +3057,11 @@ textarea.input {
   }
 
   .input--subscribe {
-    padding-top: 1.1875rem;
+    padding-top: 1.0625rem;
   }
 
   .input--subscribe {
-    padding-bottom: 1.1875rem;
+    padding-bottom: 1.0625rem;
   }
 
   .title {
@@ -3636,11 +3636,11 @@ textarea.input {
   }
 
   .input--subscribe {
-    padding-top: 0.75rem;
+    padding-top: 0.625rem;
   }
 
   .input--subscribe {
-    padding-bottom: 0.75rem;
+    padding-bottom: 0.625rem;
   }
 
   .title {
@@ -4293,11 +4293,11 @@ textarea.input {
   }
 
   .footer-subscribe .input--subscribe {
-    padding-top: 0.75rem;
+    padding-top: 0.625rem;
   }
 
   .footer-subscribe .input--subscribe {
-    padding-bottom: 0.75rem;
+    padding-bottom: 0.625rem;
   }
 
   .card-common {
@@ -4479,27 +4479,27 @@ textarea.input {
     }
 }
 
-@supports (padding-top: clamp( 0.75rem , -0.2635416667rem  +  1.9444444444vw , 1.1875rem )) {
+@supports (padding-top: clamp( 0.625rem , -0.3885416667rem  +  1.9444444444vw , 1.0625rem )) {
     .input--subscribe {
-      padding-top: clamp( 0.75rem , -0.2635416667rem  +  1.9444444444vw , 1.1875rem );
+      padding-top: clamp( 0.625rem , -0.3885416667rem  +  1.9444444444vw , 1.0625rem );
     }
 }
 
-@supports not (padding-top: clamp( 0.75rem , -0.2635416667rem  +  1.9444444444vw , 1.1875rem )) {
+@supports not (padding-top: clamp( 0.625rem , -0.3885416667rem  +  1.9444444444vw , 1.0625rem )) {
     .input--subscribe {
-      padding-top: calc(0.75rem + 0.4375 * (100vw - 52.125rem) / 22.5);
+      padding-top: calc(0.625rem + 0.4375 * (100vw - 52.125rem) / 22.5);
     }
 }
 
-@supports (padding-bottom: clamp( 0.75rem , -0.2635416667rem  +  1.9444444444vw , 1.1875rem )) {
+@supports (padding-bottom: clamp( 0.625rem , -0.3885416667rem  +  1.9444444444vw , 1.0625rem )) {
     .input--subscribe {
-      padding-bottom: clamp( 0.75rem , -0.2635416667rem  +  1.9444444444vw , 1.1875rem );
+      padding-bottom: clamp( 0.625rem , -0.3885416667rem  +  1.9444444444vw , 1.0625rem );
     }
 }
 
-@supports not (padding-bottom: clamp( 0.75rem , -0.2635416667rem  +  1.9444444444vw , 1.1875rem )) {
+@supports not (padding-bottom: clamp( 0.625rem , -0.3885416667rem  +  1.9444444444vw , 1.0625rem )) {
     .input--subscribe {
-      padding-bottom: calc(0.75rem + 0.4375 * (100vw - 52.125rem) / 22.5);
+      padding-bottom: calc(0.625rem + 0.4375 * (100vw - 52.125rem) / 22.5);
     }
 }
 
@@ -5275,27 +5275,27 @@ textarea.input {
     }
 }
 
-@supports (padding-top: clamp( 0.75rem , 0.3925653595rem  +  1.5250544662vw , 1.1875rem )) {
+@supports (padding-top: clamp( 0.625rem , 0.2675653595rem  +  1.5250544662vw , 1.0625rem )) {
     .footer-subscribe .input--subscribe {
-      padding-top: clamp( 0.75rem , 0.3925653595rem  +  1.5250544662vw , 1.1875rem );
+      padding-top: clamp( 0.625rem , 0.2675653595rem  +  1.5250544662vw , 1.0625rem );
     }
 }
 
-@supports not (padding-top: clamp( 0.75rem , 0.3925653595rem  +  1.5250544662vw , 1.1875rem )) {
+@supports not (padding-top: clamp( 0.625rem , 0.2675653595rem  +  1.5250544662vw , 1.0625rem )) {
     .footer-subscribe .input--subscribe {
-      padding-top: calc(0.75rem + 0.4375 * (100vw - 23.4375rem) / 28.6875);
+      padding-top: calc(0.625rem + 0.4375 * (100vw - 23.4375rem) / 28.6875);
     }
 }
 
-@supports (padding-bottom: clamp( 0.75rem , 0.3925653595rem  +  1.5250544662vw , 1.1875rem )) {
+@supports (padding-bottom: clamp( 0.625rem , 0.2675653595rem  +  1.5250544662vw , 1.0625rem )) {
     .footer-subscribe .input--subscribe {
-      padding-bottom: clamp( 0.75rem , 0.3925653595rem  +  1.5250544662vw , 1.1875rem );
+      padding-bottom: clamp( 0.625rem , 0.2675653595rem  +  1.5250544662vw , 1.0625rem );
     }
 }
 
-@supports not (padding-bottom: clamp( 0.75rem , 0.3925653595rem  +  1.5250544662vw , 1.1875rem )) {
+@supports not (padding-bottom: clamp( 0.625rem , 0.2675653595rem  +  1.5250544662vw , 1.0625rem )) {
     .footer-subscribe .input--subscribe {
-      padding-bottom: calc(0.75rem + 0.4375 * (100vw - 23.4375rem) / 28.6875);
+      padding-bottom: calc(0.625rem + 0.4375 * (100vw - 23.4375rem) / 28.6875);
     }
 }
 
