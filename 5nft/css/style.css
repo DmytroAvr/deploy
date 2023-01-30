@@ -2634,6 +2634,9 @@ textarea.input {
       -ms-flex-align: center;
           align-items: center;
   font-family: "Work Sans";
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .tab-rating__account-artist:focus,
@@ -3740,6 +3743,10 @@ textarea.input {
   }
 
   .header__logo {
+    max-width: 11.40625rem;
+  }
+
+  .header__logo svg {
     max-width: 11.40625rem;
   }
 }
