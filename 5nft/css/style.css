@@ -1581,7 +1581,7 @@ textarea.input {
   margin: 0 auto 1.875rem 0;
 }
 
-.highlight__artist .card-common {
+.highlight__artist.card-common {
   max-width: 9.4375rem;
 }
 
