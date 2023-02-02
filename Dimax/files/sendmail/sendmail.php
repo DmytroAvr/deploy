@@ -17,8 +17,9 @@
 	$mail->SMTPAuth   = true;                                   //Enable SMTP authentication
 	$mail->Username   = 'onvix80@gmail.com';                     //SMTP username
 	$mail->Password   = 'passwoRd2023';                               //SMTP password
-	$mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
-	$mail->Port       = 587;                 
+	//$mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
+	$mail->SMTPSecure = 'ssl';                
+	$mail->Port       = 587; 
 	
 
 	//Від кого лист
