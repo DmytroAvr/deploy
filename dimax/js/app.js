@@ -7660,10 +7660,9 @@
         let url = document.location.href;
         for (let i = 0; i < script_link.length; i++) if (url == script_link[i].href) {
             script_link[i].classList.add("--active-link");
-            console.log(script_link[i]);
             script_link[i].href = "#";
         }
-        window["FLS"] = true;
+        window["FLS"] = false;
         isWebp();
         addLoadedClass();
         menuInit();

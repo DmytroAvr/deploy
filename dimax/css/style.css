@@ -343,12 +343,12 @@ div.form__error {
   padding-left: 1.875rem;
 }
 
+.input__row #pageMyText,
 .input__row #myText {
   resize: vertical;
   padding: 0.625rem 1.25rem;
   padding-left: 1.875rem;
   max-height: 15.625rem;
-  height: 2.8125rem;
   min-height: 2.8125rem;
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -1268,7 +1268,7 @@ our-partners
   -webkit-transform: scale(1.05);
       -ms-transform: scale(1.05);
           transform: scale(1.05);
-  display: block;
+  display: inline-block;
 }
 
 .icon-menu {
