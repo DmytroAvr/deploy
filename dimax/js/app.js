@@ -7656,6 +7656,13 @@
         }
         const da = new DynamicAdapt("max");
         da.init();
+        let script_link = document.getElementsByClassName("menu__link");
+        let url = document.location.href;
+        for (let i = 0; i < script_link.length; i++) if (url == script_link[i].href) {
+            script_link[i].classList.add("--active-link");
+            console.log(script_link[i]);
+            script_link[i].href = "#";
+        }
         window["FLS"] = true;
         isWebp();
         addLoadedClass();

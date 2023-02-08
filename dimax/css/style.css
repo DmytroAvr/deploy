@@ -1259,6 +1259,18 @@ our-partners
   display: inline-block;
 }
 
+.menu__link.--active-link {
+  pointer-events: none;
+}
+
+.menu__link.--active-link span {
+  color: #f30315;
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
+  display: block;
+}
+
 .icon-menu {
   display: none;
 }
