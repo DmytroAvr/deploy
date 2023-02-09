@@ -1344,6 +1344,18 @@ our-partners
   margin-bottom: 0.9375rem;
 }
 
+.menu-column__link.--active-link {
+  pointer-events: none;
+}
+
+.menu-column__link.--active-link span {
+  color: #f30315;
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
+  display: inline-block;
+}
+
 .menu-column__spoiler {
   max-width: 7.5rem;
   width: 100%;

@@ -3848,7 +3848,7 @@
                             form.classList.remove("_sending");
                             formSent(form, responseResult);
                         } else {
-                            alert("Помилка");
+                            alert("Ops, something went wrong");
                             form.classList.remove("_sending");
                         }
                     } else if (form.hasAttribute("data-dev")) {
@@ -3876,7 +3876,7 @@
                     }
                 }), 0);
                 formValidate.formClean(form);
-                formLogging(`Форму відправлено!`);
+                formLogging(`Form was sent`);
             }
             function formLogging(message) {
                 FLS(`[Форми]: ${message}`);
@@ -7656,11 +7656,16 @@
         }
         const da = new DynamicAdapt("max");
         da.init();
-        let script_link = document.getElementsByClassName("menu__link");
         let url = document.location.href;
+        let script_link = document.getElementsByClassName("menu__link");
         for (let i = 0; i < script_link.length; i++) if (url == script_link[i].href) {
             script_link[i].classList.add("--active-link");
             script_link[i].href = "#";
+        }
+        let script_col_link = document.getElementsByClassName("menu-column__link");
+        for (let i = 0; i < script_col_link.length; i++) if (url == script_col_link[i].href) {
+            script_col_link[i].classList.add("--active-link");
+            script_col_link[i].href = "#";
         }
         window["FLS"] = false;
         isWebp();
