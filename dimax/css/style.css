@@ -1219,6 +1219,22 @@ our-partners
           transform: scale(1.1);
 }
 
+.header__logo.--main-page {
+  pointer-events: none;
+}
+
+.header__logo.--main-page:focus,
+.header__logo.--main-page:focus-visible {
+  outline: none;
+}
+
+.header__logo.--main-page:focus img,
+.header__logo.--main-page:focus-visible img {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+
 .header__contact {
   z-index: 3;
 }

@@ -7657,16 +7657,24 @@
         const da = new DynamicAdapt("max");
         da.init();
         let url = document.location.href;
+        let script_col_link = document.getElementsByClassName("menu-column__link");
         let script_link = document.getElementsByClassName("menu__link");
+        let logo = document.querySelector(".header__logo");
+        if (url == logo.href) {
+            logo.classList.add("--main-page");
+            logo.href = "#";
+            logo.setAttribute("tabindex", "-1");
+        }
         for (let i = 0; i < script_link.length; i++) if (url == script_link[i].href) {
             script_link[i].classList.add("--active-link");
+            script_link[i].setAttribute("tabindex", "-1");
             script_link[i].href = "#";
-        }
-        let script_col_link = document.getElementsByClassName("menu-column__link");
-        for (let i = 0; i < script_col_link.length; i++) if (url == script_col_link[i].href) {
             script_col_link[i].classList.add("--active-link");
+            script_col_link[i].setAttribute("tabindex", "-1");
             script_col_link[i].href = "#";
         }
+        if ("" == url) console.log("hello is /'' line");
+        if (" " == url) console.log("hello is ' ' line ");
         window["FLS"] = false;
         isWebp();
         addLoadedClass();
