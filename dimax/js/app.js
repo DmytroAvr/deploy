@@ -7657,7 +7657,7 @@
         const da = new DynamicAdapt("max");
         da.init();
         let urlArr = document.location.href.split("");
-        let url = urlArr.slice(urlArr.indexOf("/", 9)).join("");
+        let url = urlArr.slice(urlArr.indexOf("/", 24)).join("");
         console.log(url);
         let script_col_link = document.getElementsByClassName("menu-column__link");
         let script_link = document.getElementsByClassName("menu__link");
