@@ -7656,26 +7656,36 @@
         }
         const da = new DynamicAdapt("max");
         da.init();
-        let url = document.location.href;
+        let urlArr = document.location.href.split("");
+        let url = urlArr.slice(urlArr.indexOf("/", 9)).join("");
+        console.log(url);
         let script_col_link = document.getElementsByClassName("menu-column__link");
         let script_link = document.getElementsByClassName("menu__link");
         let logo = document.querySelector(".header__logo");
-        if (url == logo.href) {
+        if ("/" == url) {
+            script_link[0].classList.add("--active-link");
+            script_link[0].setAttribute("tabindex", "-1");
+            script_link[0].href = "#";
+            script_col_link[0].classList.add("--active-link");
+            script_col_link[0].setAttribute("tabindex", "-1");
+            script_col_link[0].href = "#";
             logo.classList.add("--main-page");
             logo.href = "#";
             logo.setAttribute("tabindex", "-1");
-        }
-        for (let i = 0; i < script_link.length; i++) if (url == script_link[i].href) {
+        } else for (let i = 0; i < script_link.length; i++) if (url == script_link[i].pathname) {
             script_link[i].classList.add("--active-link");
             script_link[i].setAttribute("tabindex", "-1");
             script_link[i].href = "#";
             script_col_link[i].classList.add("--active-link");
             script_col_link[i].setAttribute("tabindex", "-1");
             script_col_link[i].href = "#";
+            if (script_link[0].pathname == url) {
+                logo.classList.add("--main-page");
+                logo.href = "#";
+                logo.setAttribute("tabindex", "-1");
+            }
         }
-        if ("" == url) console.log("hello is /'' line");
-        if (" " == url) console.log("hello is ' ' line ");
-        window["FLS"] = false;
+        window["FLS"] = true;
         isWebp();
         addLoadedClass();
         menuInit();
