@@ -991,6 +991,25 @@ our-partners
   opacity: 1;
 }
 
+.--sh-anim-left-short-hero {
+  -webkit-transition: opacity 0.8s, -webkit-transform 0.8s;
+  transition: opacity 0.8s, -webkit-transform 0.8s;
+  -o-transition: opacity 0.8s, transform 0.8s;
+  transition: opacity 0.8s, transform 0.8s;
+  transition: opacity 0.8s, transform 0.8s, -webkit-transform 0.8s;
+  opacity: 0;
+  -webkit-transform: translate(-20%, 0);
+      -ms-transform: translate(-20%, 0);
+          transform: translate(-20%, 0);
+}
+
+.loaded .--sh-anim-left-short-hero._watcher-view {
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+  opacity: 1;
+}
+
 .--sh-anim-right-short {
   -webkit-transition: opacity 0.8s, -webkit-transform 0.8s;
   transition: opacity 0.8s, -webkit-transform 0.8s;
