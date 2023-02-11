@@ -54,27 +54,15 @@
 	//	$body.=$_POST['name'];
 	//}	
 	
-	/*
-	//Прикріпити файл
-	if (!empty($_FILES['image']['tmp_name'])) {
-		//шлях завантаження файлу
-		$filePath = __DIR__ . "/files/sendmail/attachments/" . $_FILES['image']['name']; 
-		//грузимо файл
-		if (copy($_FILES['image']['tmp_name'], $filePath)){
-			$fileAttach = $filePath;
-			$body.='<p><strong>Фото у додатку</strong>';
-			$mail->addAttachment($fileAttach);
-		}
-	}
-	*/
+
 
 	$mail->Body = $body;
 
 	//Відправляємо
 	if (!$mail->send()) {
-		$message = 'Помилка';
+		$message = 'Something went wrong';
 	} else {
-		$message = 'Дані надіслані!';
+		$message = 'Sent';
 	}
 
 	$response = ['message' => $message];
